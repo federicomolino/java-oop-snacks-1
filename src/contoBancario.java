@@ -17,13 +17,14 @@ public class contoBancario {
         return saldo;
     }
 
-    
+    //aggiungo al saldo quanto richiesto
     public double setAggiungiSaldo(double saldoAggiunto){
         this.saldo += saldoAggiunto;
         System.out.println("Hai aggiunto al tuo conto: " + saldoAggiunto);
         return this.saldo;
     }
 
+    //Tolgo dal saldo quanto quanto indicato, verificando che non si vada sotto 0
     public double setTogliDalSaldo(double saldoTolto){
 
         if (this.saldo - saldoTolto < 0) {
@@ -35,6 +36,7 @@ public class contoBancario {
         return this.saldo;
     }
 
+    //Stampo il saldo totale presente
     public void SaldoTotale(){
         System.out.println("Il saldo totale è: " + saldo);
     }

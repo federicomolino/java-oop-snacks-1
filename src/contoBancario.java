@@ -30,6 +30,7 @@ public class contoBancario {
         if (this.saldo - saldoTolto < 0) {
             System.out.println("Non puoi prelevare più di quanto hai nel saldo");
         } else {
+            System.out.println("Al tuo Saldo iniziale hai tolto: " +saldoTolto);
             this.saldo -= saldoTolto;
         }
 

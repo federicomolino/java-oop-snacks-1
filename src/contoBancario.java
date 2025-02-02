@@ -5,6 +5,9 @@ public class contoBancario {
     private double saldo;
 
     public contoBancario(int numeroConto){
+        if (numeroConto == 0 || numeroConto <=0) {
+            System.out.println("il numero del conto non può essere minore o uguale a 0");
+        }
         this.numeroConto = numeroConto;
         this.saldo = 0;
     }

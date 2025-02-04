@@ -8,17 +8,14 @@ public class registroStudenti {
         this.count=0;
     }
 
-    public boolean addStudente (String nuovoStundente){
+    public void addStudente (String nuovoStundente){
         if (count < nomeStudente.length) {
             //Inserisco lo studente nella prima posizione libera
             nomeStudente[count] = nuovoStundente;
             count ++;
-            return true;
         }else{
             System.out.println("La classe ha raggiunto il limite massimo");
-            return false;
         }
-        
     }
 
     public void stampaStudenti(){
